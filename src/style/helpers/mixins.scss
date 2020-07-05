@@ -1,0 +1,8 @@
+@mixin font($size, $name, $weight:400, $style:normal) {
+  font: $style $weight $size $name;
+}
+
+@function remy($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
